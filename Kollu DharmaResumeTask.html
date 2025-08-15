@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Resume</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .resume-header {
+      text-align: center;
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .resume-header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .resume-header p {
+      margin: 6px 0;
+      font-size: 15px;
+    }
+
+    .resume-header a {
+      color: #4da6ff;
+      text-decoration: none;
+    }
+
+    .resume-header a:hover {
+      text-decoration: underline;
+    }
+
+    /* Navigation bar */
+    nav {
+      background-color: #444;
+      margin: 15px 0;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 12px 18px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #666;
+    }
+
+    .resume-container {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .resume-section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .resume-section-header h2 {
+      margin: 0;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .resume-buttons {
+      display: flex;
+      gap: 6px;
+    }
+
+    .resume-buttons button {
+      font-size: 18px;
+      padding: 3px 10px;
+      border: none;
+      background-color: #444;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .resume-buttons button:hover {
+      background-color: #666;
+    }
+
+    .resume-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, background-color 0.5s ease;
+      margin-top: 8px;
+      padding: 0 8px;
+      border-radius: 6px;
+    }
+
+    .resume-content.show {
+      max-height: 800px;
+      padding: 10px 8px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    p {
+      margin: 6px 0;
+      line-height: 1.5;
+    }
+
+     :target#education { background-color: red; }
+     :target#skills { background-color: orange; }
+     :target#projects { background-color: yellow; }
+     :target#softskills { background-color: green; }
+     :target#certifications { background-color: blue; }
+
+     a:hover { color: red; }
+  </style>
+</head>
+<body>
+
+  <!-- Resume Header -->
+  <div class="resume-header">
+    <h1>KOLLU DHARMA TEJA</h1>
+    <p>
+      Email: 
+      <a href="mailto:dharmakollu999@gmail.com" target="_blank">
+        dharmakollu999@gmail.com
+      </a> 
+      | Phone: 6302906730
+    </p>
+    <p>
+      LinkedIn: 
+      <a href="https://www.linkedin.com/in/kollu-dharmateja-49677b208" target="_blank">
+        www.linkedin.com/in/kollu-dharmateja-49677b208
+      </a>
+      | GitHub: 
+      <a href="https://github.com/190030810" target="_blank">
+        github.com/190030810
+      </a>
+    </p>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#education">Education Details</a></li>
+      <li><a href="#skills">Technical Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#softskills">Soft Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+    </ul>
+  </nav>
+
+  <!-- EDUCATION DETAILS -->
+  <div id="education" class="resume-container">
+    <div class="resume-section-header">
+      <h2>Education</h2>
+      <div class="resume-buttons">
+        <button class="plus">+</button>
+        <button class="minus">−</button>
+      </div>
+    </div>
+    <div class="resume-content">
+      <p><strong>Bachelors of Technology</strong> (2019–2023)<br>
+      KL University, Vaddeswaram, Guntur<br>
+      <strong>Branch:</strong> Computer Science<br>
+      <strong>CGPA:</strong> 7.3 / 10</p>
+    </div>
+  </div>
+
+  <!-- TECHNICAL SKILLS -->
+  <div id="skills" class="resume-container">
+    <div class="resume-section-header">
+      <h2>Technical Skills</h2>
+      <div class="resume-buttons">
+        <button class="plus">+</button>
+        <button class="minus">−</button>
+      </div>
+    </div>
+    <div class="resume-content">
+      <ul>
+        <li><strong>Languages:</strong> Java:-Rating(8/10), Python:-Rating(7/10)</li>
+        <li><strong>Technologies:</strong> C:-Rating(9/10), Core-Java:-Rating(8/10), HTML:-Rating(10/10), CSS:-Rating(10/10), JavaScript:-Rating(7/10), SQL:-Rating(8/10)</li>
+        <li><strong>Frameworks:</strong> Bootstrap</li>
+        <li><strong>Tools:</strong> Git, GitHub</li>
+        <li><strong>Other Skills:</strong> MS Office, Excel, PowerPoint</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div id="projects" class="resume-container">
+    <div class="resume-section-header">
+      <h2>Projects</h2>
+      <div class="resume-buttons">
+        <button class="plus">+</button>
+        <button class="minus">−</button>
+      </div>
+    </div>
+    <div class="resume-content">
+      <p><strong><u>***AN MULTI COLLABRATIVE AGENT IN E-COMMERCE SYSTEM:***</u></strong><br><br>
+• The Main objective theme of my project is to create a customized e-shopping system.<br>
+• That makes a use of agent and technologies to boost the automation and efficiency in online
+commerce of shopping process.<br>
+• Agent for e-Shopping creates connectivity on an anytime, anywhere, any device basis using
+scalability and transaction cost optimization to supply the precise goods that buyers need.<br>
+• Finally, the conclusion shows that the system performs efficiently and can help to save enormous
+time for Internet shopping..</p>
+    </div>
+  </div>
+
+  <!-- SOFT SKILLS -->
+  <div id="softskills" class="resume-container">
+    <div class="resume-section-header">
+      <h2>Soft Skills</h2>
+      <div class="resume-buttons">
+        <button class="plus">+</button>
+        <button class="minus">−</button>
+      </div>
+    </div>
+    <div class="resume-content">
+      <ul>
+        <li>Adaptability</li>
+        <li>Flexibility</li>
+        <li>Time Management</li>
+        <li>Leadership</li>
+        <li>Problem Solving</li>
+        <li>Creativity</li>
+        <li>Communication</li>
+        <li>Reliability</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div id="certifications" class="resume-container">
+    <div class="resume-section-header">
+      <h2>Certifications</h2>
+      <div class="resume-buttons">
+        <button class="plus">+</button>
+        <button class="minus">−</button>
+      </div>
+    </div>
+    <div class="resume-content">
+      <ul>
+        <li>Azure Fundamentals</li>[Date of Certified:-March03,Year:-2023]
+        <li>Azure AZ-900</li>[Date of Certified:-February16,Year:-2023]
+        <li>Automation Anywhere (RPA)</li>[Date  of Certified:-2023]
+        <li>Oracle Cloud Infrastructure[Date  of Certified:-2023][Date of  Validity:-March15,Year:-2025]</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    // Generate random color
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    // resume logic
+    document.querySelectorAll('.resume-container').forEach(container => {
+      const plusBtn = container.querySelector('.plus');
+      const minusBtn = container.querySelector('.minus');
+      const content = container.querySelector('.resume-content');
+
+      plusBtn.addEventListener('click', () => {
+        content.classList.add('show');
+        content.style.backgroundColor = getRandomColor(); 
+        setTimeout(() => {
+          content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      });
+
+      minusBtn.addEventListener('click', () => {
+        content.classList.remove('show');
+        content.style.backgroundColor = "transparent"; 
+      });
+    });
+  </script>
+</body>
+</html>
